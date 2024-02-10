@@ -1,8 +1,9 @@
 ---
+import Footer from "../components/Footer.astro";
 const { pageTitle } = Astro.props;
 ---
 
-<html lang="en">
+<html class="h-full" lang="en">
     <head>
         <meta charset="utf-8" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -16,9 +17,10 @@ const { pageTitle } = Astro.props;
             }
         </style>
     </head>
-    <body class="">
-        <div class="flex flex-col h-screen p-28">
+    <body class="h-full flex flex-col">
+        <div class="p-28 flex-[1_0_auto]">
             <slot />
         </div>
+        <Footer />
     </body>
 </html>
