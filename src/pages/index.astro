@@ -1,22 +1,8 @@
 ---
-
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<div class="grid h-screen place-items-center">
-			<div class="text-center">
-				<h1 class="text-2xl">おはよう、ゆみちゃん！</h1>
-				<p class="text-sm">もしくはおそよう。。。w</p>
-				<p class="text-base">I ❤️ you!</p>
-			</div>
-		</div>
-	</body>
-</html>
+<BaseLayout pageTitle="welcome to namakemono.dev">
+	<h1 class="text-2xl">I'm Caleb!</h1>
+	<p class="text-base">I'm a software engineer living in Tokyo, Japan 🍣</p>
+</BaseLayout>
