@@ -1,0 +1,20 @@
+---
+const { item } = Astro.props;
+---
+
+<div class="flex p-4 divide-x divide-orange-700">
+    <div class="flex-none flex-col p-4 text-center">
+        <h3 class="text-xl pb-8">{item.company}</h3>
+
+        <p>{item.city}</p>
+        <p>{item.state}, {item.country}</p>
+
+        <p class="text-sm text-slate-400 italic">{item.period}</p>
+    </div>
+    <div class="flex-1 p-4">
+        <p>{item.description}</p>
+        <ul class="list-disc list-inside">
+            {item.details.map((detail) => <li>{detail}</li>)}
+        </ul>
+    </div>
+</div>

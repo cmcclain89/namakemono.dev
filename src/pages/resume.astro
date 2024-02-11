@@ -1,9 +1,48 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import ResumeItem from "../components/ResumeItem.astro";
+
+const resumeData = [
+    {
+        company: "Lunaris",
+        city: "Musashino-shi",
+        state: "Tokyo",
+        country: "Japan",
+        period: "October 2023 - Present",
+        description: "Short description of my role",
+        details: ["Something", "Something else", "One more"],
+    },
+    {
+        company: "MarchingOrder",
+        city: "Remote",
+        state: "California",
+        country: "United States",
+        period: "August 2019 - December 2022",
+        description: "Short description of my role",
+        details: ["Something", "Something else", "One more"],
+    },
+    {
+        company: "EPFR",
+        city: "Cambridge",
+        state: "Massachusetts",
+        country: "United States",
+        period: "March 2016 - July 2019",
+        description: "Short description of my role",
+        details: ["Something", "Something else", "One more"],
+    },
+    {
+        company: "Amtrust Financial Services, Inc.",
+        city: "Cleveland",
+        state: "Ohio",
+        country: "United States",
+        period: "February 2013 - March 2016",
+        description: "Short description of my role",
+        details: ["Something", "Something else", "One more"],
+    },
+];
 ---
 
-<BaseLayout pageTitle="Caleb's Resume">
-    <div>
-        <p>can you see me?</p>
-    </div>
+<BaseLayout pageTitle="Caleb's Resume" pageHeader="Resume">
+    <h2 class="text-2xl pb-4">Professional Experience</h2>
+    {resumeData.map((item) => <ResumeItem item={item} />)}
 </BaseLayout>
