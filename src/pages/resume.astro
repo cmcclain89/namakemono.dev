@@ -60,5 +60,7 @@ const resumeData = [
 
 <BaseLayout pageTitle="Caleb's Resume" pageHeader="Resume">
     <h2 class="text-2xl pb-4">Professional Experience</h2>
-    {resumeData.map((item) => <ResumeItem item={item} />)}
+    <div class="space-y-8">
+        {resumeData.map((item) => <ResumeItem item={item} />)}
+    </div>
 </BaseLayout>
