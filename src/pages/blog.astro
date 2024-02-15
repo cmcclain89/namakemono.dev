@@ -1,0 +1,27 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+const japanesePosts = await Astro.glob("../pages/sakubun/*.md");
+---
+
+<BaseLayout pageTitle="a cursed place." pageHeader="namakemono's corner">
+    <div class="max-w-prose">
+        <h2 class="text-2xl">
+            The following are all essays and other styles of writing, all done
+            in Japanese.
+        </h2>
+        <ul>
+            {
+                japanesePosts.map((post) => (
+                    <li>
+                        <a
+                            class="text-orange-700 hover:text-orange-500 hover:underline hover:decoration transition-colors underline-offset-2"
+                            href={post.url}
+                        >
+                            {post.frontmatter.title}
+                        </a>
+                    </li>
+                ))
+            }
+        </ul>
+    </div>
+</BaseLayout>
