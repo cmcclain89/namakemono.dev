@@ -3,21 +3,20 @@ const { item } = Astro.props;
 ---
 
 <div
-    class="flex md:flex-row flex-col p-4 md:divide-x-2 md:divide-y-0 divide-y divide-orange-700"
+    class="flex lg:flex-row flex-col p-4 lg:divide-x-2 lg:divide-y-0 divide-y divide-orange-700 rounded-xl bg-slate-50 border-4 border-gray-200 shadow-sm"
 >
     <div
-        class="flex flex-none flex-col p-4 md:w-64 text-center justify-center items-center"
+        class="flex flex-none flex-col p-4 lg:w-64 text-center justify-center items-center"
     >
         <h3 class="text-xl">{item.company}</h3>
         <p class="text-md pb-8 text-slate-600">{item.position}</p>
 
-        <p>{item.city}</p>
-        <p>{item.state}, {item.country}</p>
+        <p>{item.city}, {item.state}</p>
+        <p>{item.country}</p>
 
         <p class="text-sm text-slate-400 italic">{item.period}</p>
     </div>
     <div class="flex flex-col p-6 justify-center">
-        <h4 class="pb-4 text-lg">{item.description}</h4>
         <ul class="list-disc list-inside">
             {item.details.map((detail) => <li class="pb-4">{detail}</li>)}
         </ul>

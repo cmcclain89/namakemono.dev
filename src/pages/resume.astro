@@ -5,13 +5,17 @@ import ResumeItem from "../components/ResumeItem.astro";
 const resumeData = [
     {
         company: "Lunaris GK",
-        position: "Senior Software Engineer",
+        position: "Senior Software Engineer/Engineering Manager?",
         city: "Musashino-shi",
         state: "Tokyo",
         country: "Japan",
         period: "October 2023 - Present",
         description: "Short description of my role",
-        details: ["Something", "Something else", "One more"],
+        details: [
+            "Planned and created a career growth framework based on frameworks applied at other tech companies, established formal roles within the engineering team, introduced one-on-one's, and invested time into the growth of the engineering team.",
+            "Reworked the hiring and recruiting process as well as how candidates were targeted, leading to a noticeable increase in applicable talent, decreased time spent interviewing and hiring, and lead to 4+ key hires.",
+            "Soon: Planning a new project!",
+        ],
     },
     {
         company: "MarchingOrder",
@@ -59,8 +63,8 @@ const resumeData = [
 ---
 
 <BaseLayout pageTitle="Caleb's Resume" pageHeader="Resume">
-    <h2 class="text-2xl pb-4">Professional Experience</h2>
-    <div class="space-y-8">
+    <h2 class="text-2xl pb-12">Professional Experience</h2>
+    <div class="space-y-8 2xl:px-40">
         {resumeData.map((item) => <ResumeItem item={item} />)}
     </div>
 </BaseLayout>
