@@ -1,18 +1,43 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 const japanesePosts = await Astro.glob("../pages/sakubun/*.md");
+const posts = await Astro.glob("../pages/blog/*.md");
 ---
 
-<BaseLayout pageTitle="a cursed place." pageHeader="namakemono's corner">
-    <div class="max-w-prose">
+<BaseLayout pageTitle="a cursed place." pageHeader="namakemono corner">
+    <div class="max-w-prose space-y-6">
         <h2 class="text-2xl">
-            The following are all essays and other styles of writing, all done
-            in Japanese.
+            Feeling lazy? Sit down, brew some tea, and enjoy some bad writing.
         </h2>
+
+        <h3 class="text-lg">
+            There's nothing here yet, but eventually you might find anything
+            relating to my interests.
+        </h3>
+        <ul>
+            <ul>
+                {
+                    posts.map((post) => (
+                        <li>🐙
+                            <a
+                                class="text-orange-700 hover:text-orange-500 hover:underline hover:decoration transition-colors underline-offset-2"
+                                href={post.url}
+                            >
+                                {post.frontmatter.title}
+                            </a>
+                        </li>
+                    ))
+                }
+            </ul>
+        </ul>
+        <h3 class="text-lg">
+            I sometimes write in Japanese as well. Most are from my time
+            studying in language school, but I love Japanese so I want to write again soon.
+        </h3>
         <ul>
             {
                 japanesePosts.map((post) => (
-                    <li>
+                    <li>🌸
                         <a
                             class="text-orange-700 hover:text-orange-500 hover:underline hover:decoration transition-colors underline-offset-2"
                             href={post.url}

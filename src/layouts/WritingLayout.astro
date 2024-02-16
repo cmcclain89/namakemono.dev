@@ -1,16 +1,19 @@
 ---
 import BaseLayout from "./BaseLayout.astro";
-import { fade } from "astro:transitions";
 const { frontmatter } = Astro.props;
 ---
 
 <BaseLayout pageTitle={frontmatter.title} pageHeader={frontmatter.title}>
     <div class="max-w-prose">
-        <p>{frontmatter.pubDate.slice(0, 10)}</p>
-        <p transition:animate={fade({ duration: "2s" })}>
-            <em>{frontmatter.description}</em>
+        <p class="text-gray-500 italic text-xs pb-8">
+            Written on {frontmatter.pubDate.slice(0, 10)} by {
+                frontmatter.author
+            }
         </p>
-        <p class="pb-8">Written by: {frontmatter.author}</p>
+        <p class="border-b-2 border-orange-700 pb-4 mb-12">
+            {frontmatter.description}
+        </p>
+
         <slot />
     </div>
 </BaseLayout>
