@@ -1,12 +1,13 @@
 ---
 layout: ../../layouts/WritingLayout.astro
-title: '私の好きな場所'
+title: "私の好きな場所"
 pubDate: 2023-04-19
 description: "An essay I wrote early on in my time at KAI Language School. It wasn't the first, but it was the first that I wrote that I really enjoyed. It was here that I started to enjoy writing and looked forward to it, although my writing continued to be in a standard essay format until future courses."
 author: "Caleb"
 tags: ["japanese", "essay"]
 ---
-　私の好きな場所は自宅だ。なぜかというと、様々な理由があるが、要約すると私にとって最も快適な場所だからだ。具体的な理由を三つ紹介したい。
+
+私の好きな場所は自宅だ。なぜかというと、様々な理由があるが、要約すると私にとって最も快適な場所だからだ。具体的な理由を三つ紹介したい。
 <br><br>
 　まずは、大好きなゲームがあるからだ。日本語を勉強している間を除いては、言うまでもなく私はゲームのオタクだと考えられる。子供のころからも、ゲームに興味があって、いつもずっとゲームばかりしていた。しかし、娯楽としての理由でしかないとは思えない。ゲームがきっかけにして、ソフトウェアエンジニアになったり、日本語の勉強を始めたり、ゲームを通して大切な友達と出会ったりしたからだ。そして、自分の人生には欠かせない要素になったと思う。
 <br><br>

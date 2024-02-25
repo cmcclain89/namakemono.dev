@@ -9,6 +9,7 @@ wonderful memories I have of my time in Japan. This specific montblanc also hold
 author: "Caleb"
 tags: ["japanese", "essay"]
 ---
+
 ![An image of some delicious montblanc](../../../public/img/montblanc.jpg "Montblanc")
 <br>
 　この写真を見たら、どう思うのか？美味しそうだろうか？

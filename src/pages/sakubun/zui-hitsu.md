@@ -10,24 +10,28 @@ tags: ["japanese", "essay"]
 ---
 
 # <h2 class="text-xl"><strong>夏の庭</strong></h2>
+
 花火見に<br>
 光の花咲き<br>
 空の庭<br>
 <br>
 
 # <h2 class="text-xl"><strong>太陽よりあつい</strong></h2>
+
 たこ焼きめ<br>
 ２時間待って<br>
 火傷した<br>
 <br>
 
 # <h2 class="text-xl"><strong>彩りじき</strong></h2>
+
 緋と黄を<br>
 坂に塗る時機<br>
 もみじ時季<br>
 <br>
 
 # <h2 class="text-xl"><strong>毎日</strong></h2>
+
 レジに立ち<br>
 小声で聞かれ<br>
 聞こえない<br>
