@@ -5,25 +5,29 @@ const { pageTitle, pageHeader } = Astro.props;
 ---
 
 <html class="h-full" lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-        <meta name="viewport" content="width=device-width" />
-        <meta name="generator" content={Astro.generator} />
-        <title>{pageTitle}</title>
-        <style>
-            * {
-                /* Thanks, Theo! */
-                min-width: 0;
-            }
-        </style>
-    </head>
-    <body class="h-full flex flex-col">
-        <Header />
-        <div class="md:p-28 p-4 flex-[1_0_auto]">
-            <h1 class="text-5xl pb-12">{pageHeader}</h1>
-            <slot />
-        </div>
-        <Footer />
-    </body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{pageTitle}</title>
+    <style>
+      * {
+        /* Thanks, Theo! */
+        min-width: 0;
+      }
+    </style>
+  </head>
+  <body class="h-full flex flex-col">
+    <Header />
+    <div class="md:p-28 p-4 flex-[1_0_auto]">
+      <h1
+        class="text-5xl pb-12 underline underline-offset-[16px] decoration-4 decoration-orange-700"
+      >
+        {pageHeader}
+      </h1>
+      <slot />
+    </div>
+    <Footer />
+  </body>
 </html>
