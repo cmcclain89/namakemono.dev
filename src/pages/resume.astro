@@ -5,25 +5,44 @@ import ResumeItem from "../components/ResumeItem.astro";
 const resumeData = [
   {
     company: "Lunaris GK",
+    emoji: "🛍️",
+    site: "https://teamlunaris.com",
     position: "Software Engineer",
     city: "Musashino-shi",
     state: "Tokyo",
-    country: "Japan",
+    country: "🇯🇵",
     period: "October 2023 - Present",
-    description: "Short description of my role",
+    description: "[NOT IN USE]",
     details: [
       "Planned and created a career growth framework based on frameworks applied at other tech companies, established formal roles within the engineering team, introduced one-on-one's, and invested time into the growth of the engineering team.",
       "Reworked the hiring and recruiting process as well as how candidates were targeted, leading to a noticeable increase in applicable talent, decreased time spent interviewing and hiring, and lead to 4+ key hires.",
     ],
   },
   {
+    company: "Career Break",
+    emoji: "🍡",
+    site: "https://kaij.jp",
+    position: "Japanese Language School Student",
+    city: "Shinjuku",
+    state: "Tokyo",
+    country: "🇯🇵",
+    period: "January 2023 - December 2023",
+    description: "[NOT IN USE]",
+    details: [
+      "Stepped away from work to fulfill a personal dream of mine: living abroad in Japan while studying Japanese intensively.",
+      "Passed the JLPT N2 test in July 2023, and am currently studying for JLPT N1! I intended to take the test in December 2023 but unfortunately caught COVID...the day before. 🥲",
+    ],
+  },
+  {
     company: "MarchingOrder",
+    emoji: "🎓",
+    site: "https://marchingorder.com",
     position: "Senior Software Engineer",
     city: "Remote",
     state: "California",
-    country: "United States",
+    country: "🇺🇸",
     period: "August 2019 - December 2022",
-    description: "Short description of my role",
+    description: "[NOT IN USE]",
     details: [
       "Created a brand new Virtual Ceremony product using Azure Blob Storage, C# and MSSQL when COVID started, taking the company from the brink of potential bankruptcy to acquiring hundreds of new customers and accomplishing its most profitable year to date",
       "Rewrote the emailing system, leveraging ElasticEmail’s API, webhooks, and Azure Functions, allowing the system to handle hundreds of thousands of emails and status updates daily",
@@ -32,12 +51,14 @@ const resumeData = [
   },
   {
     company: "EPFR",
+    emoji: "📈",
+    site: "https://epfr.com",
     position: "Software Engineer",
     city: "Cambridge",
     state: "Massachusetts",
-    country: "United States",
+    country: "🇺🇸",
     period: "March 2016 - July 2019",
-    description: "Short description of my role",
+    description: "[NOT IN USE]",
     details: [
       "Rewrote existing fund flow and allocation calculation engines into separate services using Azure Service Fabric, improving performance and increasing scalability of the products",
       "Collaborated with team leads, quantitative analysts and product managers to create two brand new products using MSSQL and C#, expanding existing product offerings",
@@ -46,10 +67,12 @@ const resumeData = [
   },
   {
     company: "Amtrust Financial Services, Inc.",
+    emoji: "📄",
+    site: "https://amtrustfinancial.com",
     position: "Software Engineer I",
     city: "Cleveland",
     state: "Ohio",
-    country: "United States",
+    country: "🇺🇸",
     period: "February 2013 - March 2016",
     description: "Short description of my role",
     details: [
@@ -62,7 +85,7 @@ const resumeData = [
 ---
 
 <BaseLayout pageTitle="Caleb's Resume" pageHeader="Resume">
-  <div class="space-y-8 2xl:px-40 pb-8">
+  <div class="space-y-8 pb-8 max-w-prose">
     {resumeData.map((item) => <ResumeItem item={item} />)}
   </div>
 </BaseLayout>

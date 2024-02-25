@@ -2,21 +2,25 @@
 const { item } = Astro.props;
 ---
 
-<div
-  class="flex lg:flex-row flex-col p-4 lg:divide-x-2 lg:divide-y-0 divide-y divide-orange-700 rounded-xl bg-slate-50 border-4 border-gray-200 shadow-sm"
->
-  <div
-    class="flex flex-none flex-col p-4 lg:w-64 text-center justify-center items-center"
-  >
-    <h3 class="text-xl">{item.company}</h3>
-    <p class="text-md pb-8 text-slate-600">{item.position}</p>
+<div class="flex flex-col">
+  <div class="border-b-2 border-orange-700">
+    <h3 class="text-3xl">
+      {item.company}
+      {item.emoji}
+    </h3>
+    <p class="text-md text-slate-600">{item.position}</p>
+    <a
+      class="text-md text-orange-700 hover:text-orange-500 hover:underline decoration-2 underline-offset-2"
+      href={item.site}
+      target="_blank">{item.site.split("/")[2]}</a
+    >
+    <div class="pt-4 flex flex-row">
+      <p class="text-sm flex-auto">{item.country} {item.city}, {item.state}</p>
 
-    <p>{item.city}, {item.state}</p>
-    <p>{item.country}</p>
-
-    <p class="text-sm text-slate-400 italic">{item.period}</p>
+      <p class="text-sm text-slate-400 italic flex-initial">{item.period}</p>
+    </div>
   </div>
-  <div class="flex flex-col p-6 justify-center">
+  <div>
     <ul class="list-disc list-inside">
       {item.details.map((detail) => <li class="pb-4">{detail}</li>)}
     </ul>
