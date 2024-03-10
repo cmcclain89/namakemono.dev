@@ -4,15 +4,14 @@ const japanesePosts = await Astro.glob("../../pages/en/sakubun/*.md");
 const posts = await Astro.glob("../../pages/en/blog/*.md");
 ---
 
-<BaseLayout pageTitle="a cursed place." pageHeader="namakemono corner">
+<BaseLayout pageTitle="a cursed place." pageHeader="怠け者のカフェ">
   <div class="max-w-prose space-y-6">
     <h2 class="text-2xl">
-      Feeling lazy? Sit down, brew some tea, and enjoy some bad writing.
+      怠けましょうか？寛いでいいよ。お茶を淹れ、中途半端な作文を楽しんで。
     </h2>
 
     <h3 class="text-lg">
-      There's nothing here yet, but eventually you might find anything relating
-      to my interests.
+      まだまだですが、いつか英語で書いておいた投稿をここに載せます。
     </h3>
     <ul>
       <ul>
@@ -32,8 +31,7 @@ const posts = await Astro.glob("../../pages/en/blog/*.md");
       </ul>
     </ul>
     <h3 class="text-lg">
-      I sometimes write in Japanese as well. Most are from my time studying in
-      language school, but I love Japanese so I want to write again soon.
+      たまに日本語でも書きます。ほぼ全ては日本語学校の宿題としての作文です。実は、日本語で書くのが好きだから、いつかまた始めようかと思っています。
     </h3>
     <ul>
       {
