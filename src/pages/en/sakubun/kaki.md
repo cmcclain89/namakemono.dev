@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/WritingLayout.astro
+layout: ../../../layouts/WritingLayout.astro
 title: 'かき'
 pubDate: 2023-07-13
 description: "This is actually a bit of a work in progress. I originally wrote it on the above date, but in the end, I didn't really like the second paragraph.

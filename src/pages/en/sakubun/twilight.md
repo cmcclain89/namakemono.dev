@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/WritingLayout.astro
+layout: ../../../layouts/WritingLayout.astro
 title: '暮色蒼然'
 pubDate: 2023-08-15
 description: "「暮色蒼然」という作品は、詩的な流れを書く試しであり、自分の体験の回想でもある。その時、喜び

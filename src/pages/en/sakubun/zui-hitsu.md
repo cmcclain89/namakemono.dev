@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/WritingLayout.astro
+layout: ../../../layouts/WritingLayout.astro
 title: '随筆'
 pubDate: 2023-08-31
 description: "As the title suggests, this is just a batch of various writings (poems, in this case) 

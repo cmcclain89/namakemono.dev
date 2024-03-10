@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/WritingLayout.astro
+layout: ../../../layouts/WritingLayout.astro
 title: 'モンブラン'
 pubDate: 2023-08-24
 description: "Aside from being incredibly delicious, the below montblanc is also sentimental. It was one of the first sweets I had in Japan,
@@ -10,7 +10,7 @@ author: "Caleb"
 tags: ["japanese", "essay"]
 ---
 
-![An image of some delicious montblanc](../../../public/img/montblanc.jpg "Montblanc")
+![An image of some delicious montblanc](../../../../public/img/montblanc.jpg "Montblanc")
 <br>
 　この写真を見たら、どう思うのか？美味しそうだろうか？
 <br><br>
