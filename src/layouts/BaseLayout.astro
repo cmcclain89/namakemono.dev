@@ -26,7 +26,9 @@ const { pageTitle, pageHeader } = Astro.props;
       <h1 class="text-5xl pb-12">
         {pageHeader}
       </h1>
-      <slot />
+      <div class="max-w-prose">
+        <slot />
+      </div>
     </div>
     <Footer />
   </body>
