@@ -1,84 +1,78 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import ResumeItem from "../../components/ResumeItem.astro";
+import ResumeItemJA from "../../components/ResumeItemJA.astro";
 
 const resumeData = [
   {
     company: "Lunaris GK",
     emoji: "🛍️",
     site: "https://teamlunaris.com",
-    position: "Software Engineer",
-    city: "Musashino-shi",
-    state: "Tokyo",
+    position: "シニアソフトウェアエンジニア",
+    city: "武蔵野市",
+    state: "東京都",
     country: "🇯🇵",
-    period: "October 2023 - Present",
-    description: "[NOT IN USE]",
+    period: "2023年10月〜現役",
     details: [
-      "Planned and created a career growth framework based on frameworks applied at other tech companies, established formal roles within the engineering team, introduced one-on-one's, and invested time into the growth of the engineering team.",
-      "Reworked the hiring and recruiting process as well as how candidates were targeted, leading to a noticeable increase in applicable talent, decreased time spent interviewing and hiring, and lead to 4+ key hires.",
+      "easyPointsというポイントシステムとSmapifyというShopifyとスマレジ連携アプリの開発、設計担当です。",
+      "チームを作り上げるために応募者の面接を行います。",
     ],
   },
   {
-    company: "Career Break",
+    company: "カイ日本語スクール",
     emoji: "🍡",
     site: "https://www.kaij.jp",
-    position: "Japanese Language School Student",
-    city: "Shinjuku",
-    state: "Tokyo",
+    position: "（サバティカル）日本語学校の学生",
+    city: "新宿区",
+    state: "東京都",
     country: "🇯🇵",
-    period: "January 2023 - December 2023",
-    description: "[NOT IN USE]",
+    period: "2023年1月〜2023年12月（卒業）",
     details: [
-      "Stepped away from work to fulfill a personal dream of mine: living abroad in Japan while studying Japanese intensively.",
-      "Passed the JLPT N2 test in July 2023, and am currently studying for JLPT N1! I intended to take the test in December 2023 but unfortunately caught COVID...the day before. 🥲",
+      "日本に住みながら日本語をきちんと勉強する夢を叶えるためにサバティカルを取り、日本に引っ越しました。",
+      "結果的に2023年7月、日本語能力試験(JLPT)N2合格でした。現在、JLPTN1を取るにはのんびりと勉強しています！",
     ],
   },
   {
     company: "MarchingOrder",
     emoji: "🎓",
     site: "https://marchingorder.com",
-    position: "Senior Software Engineer",
-    city: "Remote",
-    state: "California",
+    position: "シニアソフトウェアエンジニア",
+    city: "（リモート）",
+    state: "カリフォルニア州",
     country: "🇺🇸",
-    period: "August 2019 - December 2022",
-    description: "[NOT IN USE]",
+    period: "2019年8月〜2022年12月",
     details: [
-      "Created a brand new Virtual Ceremony product using Azure Blob Storage, C# and MSSQL when COVID started, taking the company from the brink of potential bankruptcy to acquiring hundreds of new customers and accomplishing its most profitable year to date",
-      "Rewrote the emailing system, leveraging ElasticEmail’s API, webhooks, and Azure Functions, allowing the system to handle hundreds of thousands of emails and status updates daily",
-      "Lead the development of two separate projects, Pronunciation Manager and Zoho API integration, using C#, MSSQL, Angular.JS and Azure, cutting operation costs by several hundred thousand dollars",
+      "最初は上司と二人でチームとして発足しました。",
+      "新型コロナによる倒の恐れがある際、C#、JavaScript、SQLとAzureを使用して斬新なプロダクトを工夫したことで、卒業式をキャンセルする予定だった大学に大ヒットになり、自社は歴史的に最も高い年商に逆転しました。",
+      "その後、上司と採用担当でチームを拡大し、リーダーとして後輩の能力を育み、プロジェクトを計画しタスクを配りました。",
+      "エンジニアとしてメールシステムを最適化するために、Elastic EmailのAPIを用いて、スケーラビリティを勘案しながらAzure Functionsを使うシステムを設計しました。",
     ],
   },
   {
     company: "EPFR",
     emoji: "📈",
     site: "https://epfr.com",
-    position: "Software Engineer",
-    city: "Cambridge",
-    state: "Massachusetts",
+    position: "ソフトウェアエンジニア",
+    city: "ケンブリッジ市",
+    state: "マサチューセッツ州",
     country: "🇺🇸",
-    period: "March 2016 - July 2019",
-    description: "[NOT IN USE]",
+    period: "2016年3月〜2019年7月",
     details: [
-      "Rewrote existing fund flow and allocation calculation engines into separate services using Azure Service Fabric, improving performance and increasing scalability of the products",
-      "Collaborated with team leads, quantitative analysts and product managers to create two brand new products using MSSQL and C#, expanding existing product offerings",
-      "Wrote the first unit tests for existing projects using Moq and FluentAssertions, and expanded test coverage to all new products going forward",
+      "Fund FlowとAllocationというプロジェクトをC#、SQLで書き直し、Azure Service Fabricを使ってそのソフトウェアの処理とスケーラビリティを最適化しました。",
+      "社長と顧客に会いに行き、どのようにソフトを使うかわかるように情報と感想を収集し、顧客の希望に応じて二つの新たなサービスでソフトを更新しました。ウェブアプリのUIをVue.js、JavaScriptで改善し、該当のAPIをC#、SQLとAzureで開発しました。",
     ],
   },
   {
     company: "Amtrust Financial Services, Inc.",
     emoji: "📄",
     site: "https://amtrustfinancial.com",
-    position: "Software Engineer I",
-    city: "Cleveland",
-    state: "Ohio",
+    position: "ソフトウェアエンジニア　I",
+    city: "クリーブランド市",
+    state: "オハイオ州",
     country: "🇺🇸",
-    period: "February 2013 - March 2016",
-    description: "Short description of my role",
+    period: "2013年2月〜2016年3月",
     details: [
-      "Created quote proposal generation project using C# and MSSQL, providing 20 existing products the ability to generate and send proposal documents",
-      "Refactored and rewrote policy declaration generation code and switched from Word to PDF generation, reducing print times to 1/20 of their original times",
-      "Lead implementation of form generation engine for the new Special Risk product, helping to introduce Agile methodologies to the team and mentoring other engineers on the project",
+      "自社が２０個以上の保険サービスに関する提案の書類を作成したり送付したりするために、C#やSQLなどを使って新たな保険契約の提案のシステムを設計し、開発しました。",
+      "10名のチームで、その提案書と保険契約の印刷のシステムを改善し、処理時間を20分の1に最速化しました。",
     ],
   },
 ];
@@ -86,6 +80,6 @@ const resumeData = [
 
 <BaseLayout pageTitle="Caleb's Resume" pageHeader="Resume">
   <div class="space-y-8 pb-8">
-    {resumeData.map((item) => <ResumeItem item={item} />)}
+    {resumeData.map((item) => <ResumeItemJA item={item} />)}
   </div>
 </BaseLayout>
