@@ -10,7 +10,7 @@ author: "Caleb"
 tags: ["japanese", "essay"]
 ---
 
-![An image of some delicious montblanc](../../../../public/img/montblanc.jpg "Montblanc")
+![An image of some delicious montblanc](https://images.namakemono.dev/montblanc.jpg "Montblanc")
 <br>
 　この写真を見たら、どう思うのか？美味しそうだろうか？
 <br><br>

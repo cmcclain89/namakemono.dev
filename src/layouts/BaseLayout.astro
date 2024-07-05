@@ -22,14 +22,18 @@ const { pageTitle, pageHeader } = Astro.props;
   </head>
   <body class="h-full flex flex-col">
     <Header />
-    <div
-      class="flex-[1_0_auto] md:py-48 py-8 2xl:px-[32rem] xl:px-96 lg:px-64 md:px-48 px-8 justify-items-center"
-    >
-      <h1 class="text-5xl pb-12">
-        {pageHeader}
-      </h1>
-      <slot />
+    <div class="flex">
+      <div class="flex-auto px-4"></div>
+      <div class="flex-initial max-w-4xl md:py-24 py-8">
+        <h1 class="text-5xl pb-12">
+          {pageHeader}
+        </h1>
+        <slot />
+      </div>
+
+      <div class="flex-auto px-4"></div>
     </div>
+
     <Footer />
   </body>
 </html>
