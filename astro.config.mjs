@@ -1,20 +1,24 @@
 import { defineConfig } from "astro/config";
-
 import tailwind from "@astrojs/tailwind";
+
+import mdx from "@astrojs/mdx";
 
 // https://astro.build/config
 export default defineConfig({
   site: `https://www.namakemono.dev`,
   redirects: {
-    "/": "/en",
+    "/": "/en"
   },
-  integrations: [tailwind()],
+  integrations: [tailwind(), mdx()],
   i18n: {
     defaultLocale: "en",
     locales: ["en", "ja"],
     routing: {
       prefixDefaultLocale: true,
-      redirectToDefaultLocale: false,
-    },
+      redirectToDefaultLocale: false
+    }
   },
+  image: {
+    domains: ["images.namakemono.dev"]
+  }
 });
