@@ -20,6 +20,6 @@ export const ui = {
     'header.projects': 'プロジェクト',
     'header.blog': 'ブログ',
     'header.language': 'English',
-    'footer.text': '🐙を込めて東京で作りました'
+    'footer.text': '東京より🐙を込めて作りました'
   },
 } as const;
