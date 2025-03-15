@@ -1,7 +1,11 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
-const japanesePosts = await Astro.glob("../../pages/en/sakubun/*");
-const posts = await Astro.glob("../../pages/en/blog/*");
+const japanesePosts = Object.values(
+  import.meta.glob("../../pages/en/sakubun/*", { eager: true })
+);
+const posts = Object.values(
+  import.meta.glob("../../pages/en/blog/*", { eager: true })
+);
 ---
 
 <BaseLayout pageTitle="a cursed place." pageHeader="namakemono corner">
